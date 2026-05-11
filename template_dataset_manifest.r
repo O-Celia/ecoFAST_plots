@@ -1,7 +1,7 @@
 # ---- settings ----
-dataset <- "fishbiomass"
+dataset <- # NAME DATASET
 
-base_dir <- dataset
+  base_dir <- dataset
 out_file <- file.path(base_dir, "manifest.csv")
 
 # ---- helpers ----
