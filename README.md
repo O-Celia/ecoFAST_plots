@@ -16,7 +16,7 @@ It contains:
 The repository is designed to remain separate from:
 
 - the main **ecoFAST** R package;
-- the **ecoFAST-app** Shiny repository.
+- the **ecoFAST_app** Shiny repository.
 
 This separation avoids storing large image files inside the package or app repositories.
 
@@ -172,7 +172,7 @@ Dataset metadata and plot URLs are configured in:
 config/datasets.csv
 ```
 
-inside the `ecoFAST-app` repository.
+inside the `ecoFAST_app` repository.
 
 The app can then load plots from a remote static file server.
 
@@ -197,7 +197,7 @@ Steps:
 1. generate ecoFAST outputs;
 2. generate plots;
 3. create `manifest.csv`;
-4. register the dataset in `ecoFAST-app/config/datasets.csv`.
+4. register the dataset in `ecoFAST_app/config/datasets.csv`.
 
 ---
 
@@ -213,6 +213,6 @@ The repository assumes that:
 
 # Notes
 
-This repository only stores plots and plot metadata. Analytical outputs (`.rda` objects) are stored separately in the `ecoFAST-app` repository.
+This repository only stores plots and plot metadata. Analytical outputs (`.rda` objects) are stored separately in the `ecoFAST_app` repository.
 
 This repository is currently a temporary hosting solution. The manifest system was designed to remain compatible with future storage backends.
