@@ -4,7 +4,7 @@ fishbiomass_classif <- run_classif(
     data,
     min_len = 20, str = "aic_asd",
     run_loo = TRUE, two_bkps = FALSE,
-    ind_plot = NULL,
+    ind_plot = NULL, save_detplot = TRUE,
     dirname = "[....]/fishbiomass/aic/classif", save_plot = TRUE, cores = 1
 )
 fishbiomass_dynfoot2 <- run_dynfoot(
