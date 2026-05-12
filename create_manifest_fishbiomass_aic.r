@@ -1,7 +1,7 @@
 # ---- settings ----
 dataset <- "fishbiomass"
 
-analysis <- "aicasd"
+analysis <- "aic"
 base_dir <- file.path(dataset, analysis)
 out_file <- file.path(base_dir, "manifest.csv")
 
