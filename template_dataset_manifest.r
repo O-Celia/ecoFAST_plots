@@ -1,7 +1,9 @@
 # ---- settings ----
-dataset <- # NAME DATASET
+dataset <- "" # NAME DATASET
 
-  base_dir <- dataset
+analysis <- "" # NAME ANALYSIS (options : "aic", "aicasd", "loo")
+
+base_dir <- file.path(dataset, analysis)
 out_file <- file.path(base_dir, "manifest.csv")
 
 # ---- helpers ----
@@ -21,7 +23,7 @@ get_id_from_file <- function(x, plot_type) {
 }
 
 make_manifest_block <- function(dataset, plot_type) {
-  plot_dir <- file.path(dataset, plot_type)
+  plot_dir <- file.path(dataset, analysis, plot_type)
 
   if (!dir.exists(plot_dir)) {
     warning("Missing folder: ", plot_dir)
@@ -44,7 +46,7 @@ make_manifest_block <- function(dataset, plot_type) {
     dataset = dataset,
     series_id = get_id_from_file(files, plot_type),
     plot_type = plot_type,
-    path = file.path(dataset, plot_type, files),
+    path = file.path(dataset, analysis, plot_type, files),
     stringsAsFactors = FALSE
   )
 }
