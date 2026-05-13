@@ -11,7 +11,7 @@ get_id_from_file <- function(x, plot_type) {
   x <- sub("\\.(png|jpg|jpeg)$", "", x, ignore.case = TRUE)
 
   if (plot_type %in% c("classif", "detection")) {
-    return(sub("_(aic|aicasd|loo).*$", "", x))
+    return(sub("_(aic|aicasd).*$", "", x))
   }
 
   x

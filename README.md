@@ -145,7 +145,6 @@ Recommended analysis names:
 
 - `aic`
 - `aicasd`
-- `loo`
 
 ---
 
@@ -156,8 +155,8 @@ Plot filenames should preserve the original time-series ID whenever possible.
 Examples:
 
 ```text
-ACADRED2J3K_aicasd_looFALSE_allmodels.png
-COD1F-XIV_aicasd_looTRUE_allmodels.png
+ACADRED2J3K_aicasd_looTRUE_allmodels.png
+COD1F-XIV_aic_looTRUE_allmodels.png
 ```
 
 ---
