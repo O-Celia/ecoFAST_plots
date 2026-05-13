@@ -162,45 +162,6 @@ COD1F-XIV_aicasd_looTRUE_allmodels.png
 
 ---
 
-# Integration with the ecoFAST app
-
-The Shiny app reads plot manifests from this repository.
-
-Dataset metadata and plot URLs are configured in:
-
-```text
-config/datasets.csv
-```
-
-inside the `ecoFAST_app` repository.
-
-The app can then load plots from a remote static file server.
-
----
-
-# Adding a new dataset
-
-Example workflow for adding a new dataset named `ram` using an `aic` workflow:
-
-```text
-ecoFAST_plots/
-└── ram/
-    └── aic/
-        ├── classif/
-        ├── dynfoot/
-        ├── manifest.csv
-        └── produce_plots.r
-```
-
-Steps:
-
-1. generate ecoFAST outputs;
-2. generate plots;
-3. create `manifest.csv`;
-4. register the dataset in `ecoFAST_app/config/datasets.csv`.
-
----
-
 # Requirements
 
 The repository assumes that:
